@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RecordVoice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-G6-Aa3">
+                                <rect key="frame" x="58" y="75" width="121" height="38"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="cRy-H0-QU9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="sr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EUq-po-j2x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86i-Yp-raQ">
+                                <rect key="frame" x="58" y="167" width="121" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="wav -&gt; amr"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-pI-sYY">
+                                <rect key="frame" x="58" y="259" width="121" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="G3p-IT-Lqu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放wav"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgy-Rc-wg4">
+                                <rect key="frame" x="219" y="258" width="119" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="播放amr"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1b-MF-kPu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9G-RK-umz">
+                                <rect key="frame" x="219" y="167" width="119" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="amr -&gt; wav"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0U-4O-LFe">
+                                <rect key="frame" x="219" y="75" width="119" height="38"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="Ulk-Eu-nQt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="停止录制"/>
+                                <connections>
+                                    <action selector="str:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Td5-QI-09T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Y9G-RK-umz" firstAttribute="leading" secondItem="Xgy-Rc-wg4" secondAttribute="leading" id="0xh-bz-gc0"/>
+                            <constraint firstItem="Y9G-RK-umz" firstAttribute="baseline" secondItem="86i-Yp-raQ" secondAttribute="firstBaseline" id="1rB-g9-Jin"/>
+                            <constraint firstItem="SRf-G6-Aa3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="6xW-g9-AoA"/>
+                            <constraint firstItem="K0U-4O-LFe" firstAttribute="leading" secondItem="SRf-G6-Aa3" secondAttribute="trailing" constant="40" id="AbD-kV-YyO"/>
+                            <constraint firstItem="Xgy-Rc-wg4" firstAttribute="top" secondItem="Y9G-RK-umz" secondAttribute="bottom" constant="48" id="Bxt-bF-Dr7"/>
+                            <constraint firstItem="K0U-4O-LFe" firstAttribute="leading" secondItem="Y9G-RK-umz" secondAttribute="leading" id="CGn-mY-qyg"/>
+                            <constraint firstItem="86i-Yp-raQ" firstAttribute="top" secondItem="Y9G-RK-umz" secondAttribute="top" id="IMy-nr-Ws7"/>
+                            <constraint firstItem="aHy-pI-sYY" firstAttribute="bottom" secondItem="Xgy-Rc-wg4" secondAttribute="bottom" id="IOP-j9-hJk"/>
+                            <constraint firstItem="K0U-4O-LFe" firstAttribute="trailing" secondItem="Y9G-RK-umz" secondAttribute="trailing" id="KGq-0E-AYQ"/>
+                            <constraint firstItem="86i-Yp-raQ" firstAttribute="top" secondItem="SRf-G6-Aa3" secondAttribute="bottom" constant="54" id="OF2-bu-a0t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aHy-pI-sYY" secondAttribute="bottom" constant="366" id="OVT-QL-JMY"/>
+                            <constraint firstItem="aHy-pI-sYY" firstAttribute="centerY" secondItem="Xgy-Rc-wg4" secondAttribute="centerY" id="Rni-V1-ade"/>
+                            <constraint firstItem="SRf-G6-Aa3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="SKa-a5-Fpp"/>
+                            <constraint firstItem="Y9G-RK-umz" firstAttribute="trailing" secondItem="Xgy-Rc-wg4" secondAttribute="trailing" id="SNi-Lp-gk7"/>
+                            <constraint firstItem="SRf-G6-Aa3" firstAttribute="baseline" secondItem="K0U-4O-LFe" secondAttribute="firstBaseline" id="aOy-Ni-jzn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K0U-4O-LFe" secondAttribute="trailing" constant="37" id="bCk-r4-fkm"/>
+                            <constraint firstItem="SRf-G6-Aa3" firstAttribute="trailing" secondItem="86i-Yp-raQ" secondAttribute="trailing" id="doO-Kf-8YS"/>
+                            <constraint firstItem="SRf-G6-Aa3" firstAttribute="top" secondItem="K0U-4O-LFe" secondAttribute="top" id="fV7-kH-pWG"/>
+                            <constraint firstItem="SRf-G6-Aa3" firstAttribute="leading" secondItem="86i-Yp-raQ" secondAttribute="leading" id="tv8-J3-l2A"/>
+                            <constraint firstItem="86i-Yp-raQ" firstAttribute="leading" secondItem="aHy-pI-sYY" secondAttribute="leading" id="xy8-fw-Xs1"/>
+                            <constraint firstItem="86i-Yp-raQ" firstAttribute="trailing" secondItem="aHy-pI-sYY" secondAttribute="trailing" id="yb5-vG-djx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="18"/>
+        </scene>
+    </scenes>
+</document>
