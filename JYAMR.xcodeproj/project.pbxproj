@@ -85,6 +85,7 @@
 		6048C09E207DBEDF006037C9 /* JYAMRNB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYAMRNB.swift; sourceTree = "<group>"; };
 		607CC8AE207E37CE0097726C /* JYAMRRecordAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYAMRRecordAudio.swift; sourceTree = "<group>"; };
 		609860E5207EFF0700044595 /* JYAMRPlayAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYAMRPlayAudio.swift; sourceTree = "<group>"; };
+		60C1094B2091BA3100965D32 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		6048C07D207DBE62006037C9 = {
 			isa = PBXGroup;
 			children = (
+				60C1094B2091BA3100965D32 /* README.md */,
 				6048C089207DBE62006037C9 /* JYAMR */,
 				604554FC207E1AF400E900BF /* RecordVoice */,
 				6048C088207DBE62006037C9 /* Products */,
