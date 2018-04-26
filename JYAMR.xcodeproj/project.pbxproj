@@ -144,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				6048C09E207DBEDF006037C9 /* JYAMRNB.swift */,
+				6048C08A207DBE62006037C9 /* JYAMR.h */,
 				609860E5207EFF0700044595 /* JYAMRPlayAudio.swift */,
 				607CC8AE207E37CE0097726C /* JYAMRRecordAudio.swift */,
 				60455454207DE07100E900BF /* amrnb_dec.h */,
@@ -154,7 +155,6 @@
 				6045545A207DE0D500E900BF /* wavreader.h */,
 				60455458207DE0D500E900BF /* wavwriter.c */,
 				60455459207DE0D500E900BF /* wavwriter.h */,
-				6048C08A207DBE62006037C9 /* JYAMR.h */,
 				6048C096207DBE97006037C9 /* interf_dec.h */,
 				6048C097207DBE97006037C9 /* interf_enc.h */,
 				6048C09A207DBE9F006037C9 /* dec_if.h */,
